@@ -128,7 +128,27 @@ if (status == "success")
 //CLIENTMODEL=========================================================================
 function validateUserForm()
 {
-return true;
+	if ($("#billingtype").val().trim() == "") 
+ 	{ 
+ 		return "Insert billingtype."; 
+ 	}
+ 	if ($("#account_number").val().trim() == "") 
+ 	{ 
+ 		return "Insert account_number."; 
+ 	}
+ 	if ($("#totalprice").val().trim() == "") 
+ 	{ 
+ 		return "Insert totalprice."; 
+ 	}
+  	if ($("#remark").val().trim() == "") 
+ 	{ 
+ 		return "Insert remark."; 
+ 	}
+  	if ($("#date").val().trim() == "") 
+ 	{ 
+ 		return "Select date."; 
+ 	}
+	return true;
 }
 
 
